@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A28C31E2A30B7710065D596 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A28C31D2A30B7710065D596 /* DashboardViewController.swift */; };
 		4AAC37542A2F228A001D12C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC37532A2F228A001D12C3 /* AppDelegate.swift */; };
 		4AAC37562A2F228A001D12C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC37552A2F228A001D12C3 /* SceneDelegate.swift */; };
 		4AAC37582A2F228A001D12C3 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC37572A2F228A001D12C3 /* SplashViewController.swift */; };
@@ -17,11 +18,30 @@
 		4AAC376E2A2F228C001D12C3 /* MockupTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC376D2A2F228C001D12C3 /* MockupTestTests.swift */; };
 		4AAC37782A2F228C001D12C3 /* MockupTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC37772A2F228C001D12C3 /* MockupTestUITests.swift */; };
 		4AAC377A2A2F228C001D12C3 /* MockupTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC37792A2F228C001D12C3 /* MockupTestUITestsLaunchTests.swift */; };
+		4AE0A3222A300B6300B7AFBB /* SkyFloatingLabelTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 4AE0A3212A300B6300B7AFBB /* SkyFloatingLabelTextField */; };
+		4AE0A3252A300C9F00B7AFBB /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE0A3242A300C9F00B7AFBB /* SignUpView.xib */; };
+		4AE0A3272A300D9100B7AFBB /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE0A3262A300D9100B7AFBB /* SignUpView.swift */; };
+		4AE0A32D2A301CA000B7AFBB /* FINNBottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 4AE0A32C2A301CA000B7AFBB /* FINNBottomSheet */; };
+		4AE0A32F2A30578900B7AFBB /* NSAttributedStringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE0A32E2A30578900B7AFBB /* NSAttributedStringExtension.swift */; };
+		4AE0A3312A30596500B7AFBB /* UITapGestureRecognizer+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE0A3302A30596500B7AFBB /* UITapGestureRecognizer+Extension.swift */; };
+		4AE0A3332A3063FC00B7AFBB /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE0A3322A3063FC00B7AFBB /* Optional+Extension.swift */; };
+		4AE0A3362A306CDA00B7AFBB /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE0A3352A306CDA00B7AFBB /* SignInView.swift */; };
+		4AE0A3382A306CE500B7AFBB /* SignInView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE0A3372A306CE500B7AFBB /* SignInView.xib */; };
+		4AE0A33D2A3077CF00B7AFBB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AE0A33C2A3077CF00B7AFBB /* GoogleService-Info.plist */; };
+		4AE0A3402A307CEA00B7AFBB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 4AE0A33F2A307CEA00B7AFBB /* FirebaseAnalytics */; };
+		4AE0A3422A307CEA00B7AFBB /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 4AE0A3412A307CEA00B7AFBB /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		4AE0A3442A307CEA00B7AFBB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 4AE0A3432A307CEA00B7AFBB /* FirebaseAuth */; };
 		4AE11B6C2A2F2EAF00C931F0 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 4AE11B6B2A2F2EAF00C931F0 /* Lottie */; };
 		4AE11B6F2A2F323B00C931F0 /* OnboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE11B6E2A2F323B00C931F0 /* OnboardViewController.swift */; };
 		4AE11B722A2F3FF000C931F0 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE11B712A2F3FF000C931F0 /* UIViewController+Extension.swift */; };
 		4AE11B742A2F40A500C931F0 /* animationLock.json in Resources */ = {isa = PBXBuildFile; fileRef = 4AE11B732A2F40A400C931F0 /* animationLock.json */; };
 		4AE11B762A2F5B3300C931F0 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE11B752A2F5B3300C931F0 /* UIView+Extension.swift */; };
+		4AE11B782A2F5E0F00C931F0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE11B772A2F5E0F00C931F0 /* SignUpViewController.swift */; };
+		4AE11B7A2A2F5E1E00C931F0 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE11B792A2F5E1E00C931F0 /* SignInViewController.swift */; };
+		4AE11B7C2A2F61A500C931F0 /* TSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE11B7B2A2F61A500C931F0 /* TSViewController.swift */; };
+		4AE11B7E2A2F634D00C931F0 /* UIBarButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE11B7D2A2F634D00C931F0 /* UIBarButton+Extension.swift */; };
+		4AE11B802A2F638A00C931F0 /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE11B7F2A2F638A00C931F0 /* UIButton+Extension.swift */; };
+		4AE11B822A2F646B00C931F0 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE11B812A2F646B00C931F0 /* Action.swift */; };
 		4C3FB2E551F079166E4EEA58 /* Pods_MockupTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3430538548ECC34796328987 /* Pods_MockupTest.framework */; };
 		9D41EB123F862E2936A0411D /* Pods_MockupTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BF0C6228B4B1FDF0CC315EB /* Pods_MockupTestTests.framework */; };
 		C36BAE638EF1B1654C3AEEBE /* Pods_MockupTest_MockupTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B7E343E1D353DC5660222E /* Pods_MockupTest_MockupTestUITests.framework */; };
@@ -52,6 +72,7 @@
 		3430538548ECC34796328987 /* Pods_MockupTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MockupTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43B7E343E1D353DC5660222E /* Pods_MockupTest_MockupTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MockupTest_MockupTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0707B4756BE1D15A171202 /* Pods-MockupTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockupTest.debug.xcconfig"; path = "Target Support Files/Pods-MockupTest/Pods-MockupTest.debug.xcconfig"; sourceTree = "<group>"; };
+		4A28C31D2A30B7710065D596 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		4AAC37502A2F228A001D12C3 /* MockupTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MockupTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AAC37532A2F228A001D12C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AAC37552A2F228A001D12C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,10 +87,25 @@
 		4AAC37732A2F228C001D12C3 /* MockupTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MockupTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AAC37772A2F228C001D12C3 /* MockupTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockupTestUITests.swift; sourceTree = "<group>"; };
 		4AAC37792A2F228C001D12C3 /* MockupTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockupTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4AE0A3242A300C9F00B7AFBB /* SignUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
+		4AE0A3262A300D9100B7AFBB /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		4AE0A32E2A30578900B7AFBB /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
+		4AE0A3302A30596500B7AFBB /* UITapGestureRecognizer+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+Extension.swift"; sourceTree = "<group>"; };
+		4AE0A3322A3063FC00B7AFBB /* Optional+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
+		4AE0A3342A30661800B7AFBB /* MockupTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MockupTest.entitlements; sourceTree = "<group>"; };
+		4AE0A3352A306CDA00B7AFBB /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		4AE0A3372A306CE500B7AFBB /* SignInView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignInView.xib; sourceTree = "<group>"; };
+		4AE0A33C2A3077CF00B7AFBB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4AE11B6E2A2F323B00C931F0 /* OnboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardViewController.swift; sourceTree = "<group>"; };
 		4AE11B712A2F3FF000C931F0 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		4AE11B732A2F40A400C931F0 /* animationLock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = animationLock.json; sourceTree = "<group>"; };
 		4AE11B752A2F5B3300C931F0 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		4AE11B772A2F5E0F00C931F0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4AE11B792A2F5E1E00C931F0 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		4AE11B7B2A2F61A500C931F0 /* TSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSViewController.swift; sourceTree = "<group>"; };
+		4AE11B7D2A2F634D00C931F0 /* UIBarButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButton+Extension.swift"; sourceTree = "<group>"; };
+		4AE11B7F2A2F638A00C931F0 /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
+		4AE11B812A2F646B00C931F0 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		54624468F8B5D436BEBA225B /* Pods-MockupTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockupTest.release.xcconfig"; path = "Target Support Files/Pods-MockupTest/Pods-MockupTest.release.xcconfig"; sourceTree = "<group>"; };
 		BAEE6DDEEB9C616D78A63880 /* Pods-MockupTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockupTestTests.release.xcconfig"; path = "Target Support Files/Pods-MockupTestTests/Pods-MockupTestTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,7 +115,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE0A3222A300B6300B7AFBB /* SkyFloatingLabelTextField in Frameworks */,
+				4AE0A3422A307CEA00B7AFBB /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				4C3FB2E551F079166E4EEA58 /* Pods_MockupTest.framework in Frameworks */,
+				4AE0A32D2A301CA000B7AFBB /* FINNBottomSheet in Frameworks */,
+				4AE0A3402A307CEA00B7AFBB /* FirebaseAnalytics in Frameworks */,
+				4AE0A3442A307CEA00B7AFBB /* FirebaseAuth in Frameworks */,
 				4AE11B6C2A2F2EAF00C931F0 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +179,7 @@
 		4AAC37522A2F228A001D12C3 /* MockupTest */ = {
 			isa = PBXGroup;
 			children = (
+				4AE0A3342A30661800B7AFBB /* MockupTest.entitlements */,
 				4AE11B702A2F3FDD00C931F0 /* Utils */,
 				4AE11B6D2A2F31E700C931F0 /* View */,
 				4AFBC8B42A2F2682005D0746 /* Resources */,
@@ -147,6 +189,7 @@
 				4AAC375F2A2F228B001D12C3 /* Assets.xcassets */,
 				4AAC37612A2F228B001D12C3 /* LaunchScreen.storyboard */,
 				4AAC37642A2F228B001D12C3 /* Info.plist */,
+				4AE0A33C2A3077CF00B7AFBB /* GoogleService-Info.plist */,
 				4AAC375C2A2F228A001D12C3 /* MockupTest.xcdatamodeld */,
 			);
 			path = MockupTest;
@@ -169,11 +212,26 @@
 			path = MockupTestUITests;
 			sourceTree = "<group>";
 		};
+		4AE0A3232A300C8B00B7AFBB /* SubView */ = {
+			isa = PBXGroup;
+			children = (
+				4AE0A3242A300C9F00B7AFBB /* SignUpView.xib */,
+				4AE0A3262A300D9100B7AFBB /* SignUpView.swift */,
+				4AE0A3352A306CDA00B7AFBB /* SignInView.swift */,
+				4AE0A3372A306CE500B7AFBB /* SignInView.xib */,
+			);
+			path = SubView;
+			sourceTree = "<group>";
+		};
 		4AE11B6D2A2F31E700C931F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				4AE0A3232A300C8B00B7AFBB /* SubView */,
 				4AAC37572A2F228A001D12C3 /* SplashViewController.swift */,
 				4AE11B6E2A2F323B00C931F0 /* OnboardViewController.swift */,
+				4AE11B772A2F5E0F00C931F0 /* SignUpViewController.swift */,
+				4AE11B792A2F5E1E00C931F0 /* SignInViewController.swift */,
+				4A28C31D2A30B7710065D596 /* DashboardViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -183,6 +241,13 @@
 			children = (
 				4AE11B712A2F3FF000C931F0 /* UIViewController+Extension.swift */,
 				4AE11B752A2F5B3300C931F0 /* UIView+Extension.swift */,
+				4AE11B7B2A2F61A500C931F0 /* TSViewController.swift */,
+				4AE11B7D2A2F634D00C931F0 /* UIBarButton+Extension.swift */,
+				4AE11B7F2A2F638A00C931F0 /* UIButton+Extension.swift */,
+				4AE11B812A2F646B00C931F0 /* Action.swift */,
+				4AE0A32E2A30578900B7AFBB /* NSAttributedStringExtension.swift */,
+				4AE0A3302A30596500B7AFBB /* UITapGestureRecognizer+Extension.swift */,
+				4AE0A3322A3063FC00B7AFBB /* Optional+Extension.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -219,6 +284,7 @@
 				4AAC374C2A2F228A001D12C3 /* Sources */,
 				4AAC374D2A2F228A001D12C3 /* Frameworks */,
 				4AAC374E2A2F228A001D12C3 /* Resources */,
+				75F21EB1A7F87D765F9F0E71 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -227,6 +293,11 @@
 			name = MockupTest;
 			packageProductDependencies = (
 				4AE11B6B2A2F2EAF00C931F0 /* Lottie */,
+				4AE0A3212A300B6300B7AFBB /* SkyFloatingLabelTextField */,
+				4AE0A32C2A301CA000B7AFBB /* FINNBottomSheet */,
+				4AE0A33F2A307CEA00B7AFBB /* FirebaseAnalytics */,
+				4AE0A3412A307CEA00B7AFBB /* FirebaseAnalyticsWithoutAdIdSupport */,
+				4AE0A3432A307CEA00B7AFBB /* FirebaseAuth */,
 			);
 			productName = MockupTest;
 			productReference = 4AAC37502A2F228A001D12C3 /* MockupTest.app */;
@@ -259,6 +330,7 @@
 				4AAC376F2A2F228C001D12C3 /* Sources */,
 				4AAC37702A2F228C001D12C3 /* Frameworks */,
 				4AAC37712A2F228C001D12C3 /* Resources */,
+				B5730BDE576C2ED97231E2F3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -304,6 +376,9 @@
 			mainGroup = 4AAC37472A2F228A001D12C3;
 			packageReferences = (
 				4AE11B6A2A2F2EAF00C931F0 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				4AE0A3202A300B6300B7AFBB /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */,
+				4AE0A32B2A301CA000B7AFBB /* XCRemoteSwiftPackageReference "BottomSheet" */,
+				4AE0A33E2A307CEA00B7AFBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = 4AAC37512A2F228A001D12C3 /* Products */;
 			projectDirPath = "";
@@ -324,7 +399,10 @@
 				4AE11B742A2F40A500C931F0 /* animationLock.json in Resources */,
 				4AAC37632A2F228B001D12C3 /* LaunchScreen.storyboard in Resources */,
 				4AAC37602A2F228B001D12C3 /* Assets.xcassets in Resources */,
+				4AE0A3252A300C9F00B7AFBB /* SignUpView.xib in Resources */,
+				4AE0A3382A306CE500B7AFBB /* SignInView.xib in Resources */,
 				4AAC375B2A2F228A001D12C3 /* Main.storyboard in Resources */,
+				4AE0A33D2A3077CF00B7AFBB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,6 +423,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		75F21EB1A7F87D765F9F0E71 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MockupTest/Pods-MockupTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MockupTest/Pods-MockupTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MockupTest/Pods-MockupTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		79B620EF9C58A6187F07D49B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -389,6 +484,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B5730BDE576C2ED97231E2F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MockupTest-MockupTestUITests/Pods-MockupTest-MockupTestUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MockupTest-MockupTestUITests/Pods-MockupTest-MockupTestUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MockupTest-MockupTestUITests/Pods-MockupTest-MockupTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C209C776341B7046DEC18666 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -418,11 +530,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A28C31E2A30B7710065D596 /* DashboardViewController.swift in Sources */,
+				4AE0A3362A306CDA00B7AFBB /* SignInView.swift in Sources */,
 				4AE11B722A2F3FF000C931F0 /* UIViewController+Extension.swift in Sources */,
+				4AE11B822A2F646B00C931F0 /* Action.swift in Sources */,
+				4AE0A3332A3063FC00B7AFBB /* Optional+Extension.swift in Sources */,
 				4AE11B762A2F5B3300C931F0 /* UIView+Extension.swift in Sources */,
+				4AE0A3312A30596500B7AFBB /* UITapGestureRecognizer+Extension.swift in Sources */,
+				4AE11B782A2F5E0F00C931F0 /* SignUpViewController.swift in Sources */,
 				4AE11B6F2A2F323B00C931F0 /* OnboardViewController.swift in Sources */,
 				4AAC37582A2F228A001D12C3 /* SplashViewController.swift in Sources */,
+				4AE11B802A2F638A00C931F0 /* UIButton+Extension.swift in Sources */,
+				4AE11B7C2A2F61A500C931F0 /* TSViewController.swift in Sources */,
+				4AE11B7A2A2F5E1E00C931F0 /* SignInViewController.swift in Sources */,
 				4AAC37542A2F228A001D12C3 /* AppDelegate.swift in Sources */,
+				4AE0A32F2A30578900B7AFBB /* NSAttributedStringExtension.swift in Sources */,
+				4AE0A3272A300D9100B7AFBB /* SignUpView.swift in Sources */,
+				4AE11B7E2A2F634D00C931F0 /* UIBarButton+Extension.swift in Sources */,
 				4AAC375E2A2F228A001D12C3 /* MockupTest.xcdatamodeld in Sources */,
 				4AAC37562A2F228A001D12C3 /* SceneDelegate.swift in Sources */,
 			);
@@ -600,6 +724,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MockupTest/MockupTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EFQJX82876;
@@ -609,8 +734,10 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -630,6 +757,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MockupTest/MockupTest.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EFQJX82876;
@@ -639,8 +767,10 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIRequiresFullScreen = NO;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDarkContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -776,6 +906,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4AE0A3202A300B6300B7AFBB /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Skyscanner/SkyFloatingLabelTextField";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+		4AE0A32B2A301CA000B7AFBB /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/finn-no/BottomSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		4AE0A33E2A307CEA00B7AFBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
 		4AE11B6A2A2F2EAF00C931F0 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios";
@@ -787,6 +941,31 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4AE0A3212A300B6300B7AFBB /* SkyFloatingLabelTextField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AE0A3202A300B6300B7AFBB /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */;
+			productName = SkyFloatingLabelTextField;
+		};
+		4AE0A32C2A301CA000B7AFBB /* FINNBottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AE0A32B2A301CA000B7AFBB /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = FINNBottomSheet;
+		};
+		4AE0A33F2A307CEA00B7AFBB /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AE0A33E2A307CEA00B7AFBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		4AE0A3412A307CEA00B7AFBB /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AE0A33E2A307CEA00B7AFBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		4AE0A3432A307CEA00B7AFBB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AE0A33E2A307CEA00B7AFBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
 		4AE11B6B2A2F2EAF00C931F0 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4AE11B6A2A2F2EAF00C931F0 /* XCRemoteSwiftPackageReference "lottie-ios" */;

@@ -7,18 +7,21 @@
 
 import UIKit
 
-class OnboardViewController: UIViewController {
+class OnboardViewController: TSViewController {
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.navigationController?.isNavigationBarHidden = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
+        
+        self.navigationController?.isNavigationBarHidden = false
     }
     
     override func viewDidLoad() {
@@ -34,13 +37,5 @@ class OnboardViewController: UIViewController {
         signInButton.roundCorner(10)
         signInButton.backgroundColor = UIColor(red: 0/255, green: 67/255, blue: 81/255, alpha: 1.0)
         signInButton.tintColor = .white
-    }
-    
-    @IBAction func signInAction(_ sender: Any) {
-        
-    }
-    
-    @IBAction func SignUpAction(_ sender: Any) {
-        
     }
 }

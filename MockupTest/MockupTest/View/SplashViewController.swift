@@ -8,7 +8,7 @@
 import UIKit
 import Lottie
 
-class SplashViewController: UIViewController {
+class SplashViewController: TSViewController {
     @IBOutlet weak var lottieView: LottieAnimationView!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {

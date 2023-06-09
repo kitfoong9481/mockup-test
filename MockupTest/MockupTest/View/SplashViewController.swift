@@ -22,8 +22,16 @@ class SplashViewController: TSViewController {
         lottieView.play()
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-            let vc : OnboardViewController = self.storyboard?.instantiateViewController(withIdentifier: "onboard") as! OnboardViewController
-            self.navigationController?.pushViewController(vc, animated: true)
+            CurrentUserController().checkUserIsLogin(complete: { (isLogin) in
+                if isLogin {
+                    let vc : DashboardViewController = self.storyboard?.instantiateViewController(withIdentifier: "dashboard") as! DashboardViewController
+                    self.navigationController?.pushViewController(vc, animated: true)
+                } else {
+                    let vc : OnboardViewController = self.storyboard?.instantiateViewController(withIdentifier: "onboard") as! OnboardViewController
+                    self.navigationController?.pushViewController(vc, animated: true)
+                }
+                
+            })
         }
     }
 }

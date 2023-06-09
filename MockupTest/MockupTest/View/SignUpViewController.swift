@@ -52,7 +52,7 @@ extension SignUpViewController: SignUpViewDelegate {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
-    func successLogin() {
+    func successSignUp() {
         let vc : DashboardViewController = self.storyboard?.instantiateViewController(withIdentifier: "dashboard") as! DashboardViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }

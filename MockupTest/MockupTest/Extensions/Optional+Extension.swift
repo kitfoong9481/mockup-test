@@ -9,7 +9,7 @@ import Foundation
 
 extension Optional where Wrapped == String {
     public func or(_ val: String) -> String {
-        guard let _string = self else { return String.empty }
+        guard self != nil else { return String.empty }
         return val
     }
     

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="esK-YY-HVd" customClass="DashboardSelectionCell" customModule="MockupTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="112" height="87"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="112" height="87"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIr-13-SgT">
+                        <rect key="frame" x="0.0" y="0.0" width="112" height="87"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" title="All Accounts">
+                            <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                        </buttonConfiguration>
+                    </button>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="d0b-ed-WXd"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="DIr-13-SgT" secondAttribute="trailing" id="535-Wo-Zks"/>
+                <constraint firstAttribute="bottom" secondItem="DIr-13-SgT" secondAttribute="bottom" id="KML-Yk-ZCi"/>
+                <constraint firstItem="DIr-13-SgT" firstAttribute="leading" secondItem="esK-YY-HVd" secondAttribute="leading" id="WCu-gl-psJ"/>
+                <constraint firstItem="DIr-13-SgT" firstAttribute="top" secondItem="esK-YY-HVd" secondAttribute="top" id="okK-v5-7Kj"/>
+            </constraints>
+            <size key="customSize" width="112" height="87"/>
+            <connections>
+                <outlet property="selectionButton" destination="DIr-13-SgT" id="6Nb-72-Tw5"/>
+            </connections>
+            <point key="canvasLocation" x="184.73282442748092" y="70.070422535211264"/>
+        </collectionViewCell>
+    </objects>
+</document>

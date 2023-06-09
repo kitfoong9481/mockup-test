@@ -11,10 +11,11 @@ import Firebase
 import GoogleSignIn
 import AuthenticationServices
 import SkyFloatingLabelTextField
+import CoreData
 
 protocol SignUpViewDelegate {
     func loginTapped()
-    func successLogin()
+    func successSignUp()
 }
 
 class SignUpView: UIView {
@@ -99,6 +100,11 @@ class SignUpView: UIView {
         loginLabel.attributedText = underlineAttriString
         loginLabel.isUserInteractionEnabled = true
         loginLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTapOnLabel(_:))))
+        
+        usernameTextField.text = "kitfoong"
+        emailTextField.text = "kitfoong94@gmail.com"
+        passwordTextField.text = "123qwe"
+        confirmPassTextField.text = "123qwe"
     }
     
     @objc func handleTapOnLabel(_ recognizer: UITapGestureRecognizer) {
@@ -127,6 +133,8 @@ class SignUpView: UIView {
             makeToast("Password not match", duration: 2, position: CSToastPositionCenter)
             return
         }
+        
+        verifyCurrentUser(user: User(userID: "", username: usernameTextField.text.orEmpty, email: emailTextField.text.orEmpty, password: passwordTextField.text.orEmpty, loginType: 1))
     }
     
     @IBAction func googleAction(_ sender: Any) {
@@ -150,8 +158,7 @@ class SignUpView: UIView {
                     return
                 }
                 
-                self.makeToast("Success login", duration: 2, position: CSToastPositionCenter)
-                self.signUpDelegate?.successLogin()
+                self.verifyCurrentUser(user: User(userID: idToken.tokenString, username: user.profile?.name ?? "", email: user.profile?.email ?? "", password: "", loginType: 2))
             }
         }
     }
@@ -173,6 +180,18 @@ class SignUpView: UIView {
     @IBAction func showConfirmPassAction(_ sender: Any) {
         confirmPasswordEntry = !confirmPasswordEntry
         confirmPassTextField.isSecureTextEntry = confirmPasswordEntry
+    }
+    
+    func verifyCurrentUser(user: User) {
+        CurrentUserController().registerUser(user: user, complete: { (status, message) in
+            self.makeToast(message, duration: 2, position: CSToastPositionCenter)
+            
+            if status {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                    self.signUpDelegate?.successSignUp()
+                }
+            }
+        })
     }
 }
 
@@ -208,13 +227,11 @@ extension SignUpView: ASAuthorizationControllerDelegate {
                     }
                     break
                 case .notFound:
+                    let userID = appleIDCredential.user
                     let fullName = appleIDCredential.fullName
                     let email = appleIDCredential.email
                     
-                    DispatchQueue.main.async {
-                        self.makeToast("User id is \(userID) \n Full Name is \(String(describing: fullName)) \n Email id is \(String(describing: email))", duration: 2, position: CSToastPositionCenter)
-                        self.signUpDelegate?.successLogin()
-                    }
+                    self.verifyCurrentUser(user: User(userID: userID, username: String(describing: fullName), email: String(describing: email), password: "", loginType: 3))
                     break
                 case .revoked:
                     DispatchQueue.main.async {

@@ -7,11 +7,80 @@
 
 import Foundation
 import UIKit
+import Toast
 
 class DashboardViewController: TSViewController {
+    @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var searhButton: UIButton!
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    var selections: [DashboardSelection] = [DashboardSelection(title: "All Accounts", isSelected: true), DashboardSelection(title: "Login"), DashboardSelection(title: "Card"), DashboardSelection(title: "Others")]
+    
+    var currentUser: CurrentUser!
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-
+        
         self.navigationController?.isNavigationBarHidden = true
     }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        getCurrentUser()
+        setupView()
+    }
+    
+    func getCurrentUser() {
+        CurrentUserController().fetchUser(complete: { (user, status, message) in
+            if status {
+                self.currentUser = user!
+            } else {
+                self.view.makeToast(message, duration: 2, position: CSToastPositionCenter)
+            }
+        })
+    }
+    
+    func setupView() {
+        if currentUser.username.orEmpty.isEmpty {
+            welcomeLabel.text = "Welcome\n\(currentUser.userId ?? "")!"
+        } else {
+            welcomeLabel.text = "Welcome\n\(currentUser.username ?? "")!"
+        }
+        welcomeLabel.textColor = UIColor(red: 0/255, green: 67/255, blue: 81/255, alpha: 1.0)
+        
+        searhButton.circleCorner()
+        searhButton.backgroundColor = UIColor(red: 0.161, green: 0.718, blue: 0.525, alpha: 1)
+        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        collectionView.register(UINib(nibName: DashboardSelectionCell.cellIdentifier, bundle: nil), forCellWithReuseIdentifier: DashboardSelectionCell.cellIdentifier)
+    }
 }
+
+extension DashboardViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return selections.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView .dequeueReusableCell(withReuseIdentifier: DashboardSelectionCell.cellIdentifier, for: indexPath) as! DashboardSelectionCell
+        cell.configure(selection: selections[indexPath.row])
+        cell.layoutSubviews()
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        for item in selections {
+            item.isSelected = false
+        }
+        
+        selections[indexPath.row].isSelected = true
+        collectionView.reloadData()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: selections[indexPath.row].title.size(withAttributes: [NSAttributedString.Key.font : UIFont.systemFont(ofSize: 14)]).width + 30, height: 40)
+    }
+}
+
+

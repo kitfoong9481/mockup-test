@@ -11,6 +11,7 @@ import Firebase
 import GoogleSignIn
 import AuthenticationServices
 import SkyFloatingLabelTextField
+import CoreData
 
 protocol SignInViewDelegate {
     func loginTapped()
@@ -83,6 +84,9 @@ class SignInView: UIView {
         signUpLabel.attributedText = underlineAttriString
         signUpLabel.isUserInteractionEnabled = true
         signUpLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTapOnLabel(_:))))
+        
+        emailTextField.text = "kitfoong94@gmail.com"
+        passwordTextField.text = "123qwe"
     }
     
     @objc func handleTapOnLabel(_ recognizer: UITapGestureRecognizer) {
@@ -101,12 +105,14 @@ class SignInView: UIView {
             makeToast("Please fill up all the fields", duration: 2, position: CSToastPositionCenter)
             return
         }
+        
+        verifyCurrentUser(user: User(userID: "", username: "", email: emailTextField.text.orEmpty, password: passwordTextField.text.orEmpty, loginType: 1))
     }
     
     @IBAction func googleAction(_ sender: Any) {
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
         let config = GIDConfiguration(clientID: clientID)
-
+        
         guard let viewController = UIApplication.shared.currentUIWindow()?.rootViewController else { return }
         
         GIDSignIn.sharedInstance.configuration = config
@@ -129,8 +135,7 @@ class SignInView: UIView {
                     return
                 }
                 
-                self.makeToast("Success login", duration: 2, position: CSToastPositionCenter)
-                self.signInDelegate?.successLogin()
+                self.verifyCurrentUser(user: User(userID: idToken.tokenString, username: user.profile?.name ?? "", email: user.profile?.email ?? "", password: "", loginType: 2))
             }
         }
     }
@@ -147,6 +152,18 @@ class SignInView: UIView {
     @IBAction func showPassAction(_ sender: Any) {
         passwordEntry = !passwordEntry
         passwordTextField.isSecureTextEntry = passwordEntry
+    }
+    
+    func verifyCurrentUser(user: User) {
+        CurrentUserController().registerUser(user: user, complete: { (status, message) in
+            self.makeToast(message, duration: 2, position: CSToastPositionCenter)
+            
+            if status {
+                DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
+                    self.signInDelegate?.successLogin()
+                }
+            }
+        })
     }
 }
 
@@ -169,8 +186,7 @@ extension SignInView: ASAuthorizationControllerDelegate {
             let fullName = appleIDCredential.fullName
             let email = appleIDCredential.email
             
-            makeToast("User id is \(userID) \n Full Name is \(String(describing: fullName)) \n Email id is \(String(describing: email))", duration: 2, position: CSToastPositionCenter)
-            signInDelegate?.successLogin()
+            verifyCurrentUser(user: User(userID: userID, username: String(describing: fullName), email: String(describing: email), password: "", loginType: 3))
         }
     }
     

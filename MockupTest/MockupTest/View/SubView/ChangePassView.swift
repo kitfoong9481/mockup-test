@@ -68,7 +68,7 @@ class ChangePassView: UIView {
         
         emailTextField.becomeFirstResponder()
         
-        emailTextField.text = "kitfoong94@gmail.com"
+//        emailTextField.text = "kitfoong94@gmail.com"
     }
     
     @IBAction func sendAction(_ sender: Any) {

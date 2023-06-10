@@ -105,10 +105,10 @@ class SignUpView: UIView {
         loginLabel.isUserInteractionEnabled = true
         loginLabel.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTapOnLabel(_:))))
         
-        usernameTextField.text = "kitfoong"
-        emailTextField.text = "kitfoong94@gmail.com"
-        passwordTextField.text = "123qwe"
-        confirmPassTextField.text = "123qwe"
+//        usernameTextField.text = "kitfoong"
+//        emailTextField.text = "kitfoong94@gmail.com"
+//        passwordTextField.text = "123qwe"
+//        confirmPassTextField.text = "123qwe"
     }
     
     @objc func handleTapOnLabel(_ recognizer: UITapGestureRecognizer) {

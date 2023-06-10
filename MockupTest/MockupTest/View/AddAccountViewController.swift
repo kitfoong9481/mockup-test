@@ -115,11 +115,11 @@ class AddAccountViewController: TSViewController {
         // add toolbar to textField
         loginTypeTextField.inputAccessoryView = toolbar
         
-        webNameTextField.text = "Instagram"
-        urlTextfield.text = "www.instagram.com"
-        usernameTextField.text = "loki"
-        emailTextField.text = "loki@gmail.com"
-        passwordTextField.text = "123455"
+//        webNameTextField.text = "Instagram"
+//        urlTextfield.text = "www.instagram.com"
+//        usernameTextField.text = "loki"
+//        emailTextField.text = "loki@gmail.com"
+//        passwordTextField.text = "123455"
     }
     
     @objc func doneTapped() {

@@ -104,9 +104,9 @@ class ChangePassViewController: TSViewController {
             contentHeights: [screenHeight * 0.75])
         bottomSheetView.dismissalDelegate = self
         
-        currentPassTextField.text = "123qwe"
-        newPassTextField.text = "123qwe"
-        confirmPassTextField.text = "123qwe"
+//        currentPassTextField.text = "123qwe"
+//        newPassTextField.text = "123qwe"
+//        confirmPassTextField.text = "123qwe"
     }
     
     @objc func dismissKeyboard(tap: UIGestureRecognizer) {

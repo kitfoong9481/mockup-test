@@ -8,14 +8,14 @@
 import Foundation
 
 public class User {
-    var userID: String = ""
+    var userId: String = ""
     var username: String = ""
     var email: String = ""
     var password: String = ""
     var loginType: Int32 = 1
     
-    init(userID: String, username: String, email: String, password: String, loginType: Int32) {
-        self.userID = userID
+    init(userId: String, username: String, email: String, password: String, loginType: Int32) {
+        self.userId = userId
         self.username = username
         self.email = email
         self.password = password

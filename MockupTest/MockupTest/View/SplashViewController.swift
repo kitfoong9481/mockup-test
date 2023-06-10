@@ -24,13 +24,12 @@ class SplashViewController: TSViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
             CurrentUserController().checkUserIsLogin(complete: { (isLogin) in
                 if isLogin {
-                    let vc : DashboardViewController = self.storyboard?.instantiateViewController(withIdentifier: "dashboard") as! DashboardViewController
+                    let vc : DashboardTabController = self.storyboard?.instantiateViewController(withIdentifier: "dashboardTab") as! DashboardTabController
                     self.navigationController?.pushViewController(vc, animated: true)
                 } else {
                     let vc : OnboardViewController = self.storyboard?.instantiateViewController(withIdentifier: "onboard") as! OnboardViewController
                     self.navigationController?.pushViewController(vc, animated: true)
                 }
-                
             })
         }
     }

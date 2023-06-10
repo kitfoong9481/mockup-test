@@ -57,23 +57,27 @@ class SignUpView: UIView {
         
         usernameBorderView.layer.borderWidth = 1
         usernameBorderView.layer.borderColor = UIColor(red: 31/255, green: 84/255, blue: 96/255, alpha: 0.4).cgColor
+        usernameBorderView.roundCorner(5)
         usernameTextField.titleFont = UIFont.systemFont(ofSize: 10)
         usernameTextField.delegate = self
         
         emailBorderView.layer.borderWidth = 1
         emailBorderView.layer.borderColor = UIColor(red: 31/255, green: 84/255, blue: 96/255, alpha: 0.4).cgColor
+        emailBorderView.roundCorner(5)
         emailTextField.titleFont = UIFont.systemFont(ofSize: 10)
         emailTextField.keyboardType = .emailAddress
         emailTextField.delegate = self
         
         passwordBorderView.layer.borderWidth = 1
         passwordBorderView.layer.borderColor = UIColor(red: 31/255, green: 84/255, blue: 96/255, alpha: 0.4).cgColor
+        passwordBorderView.roundCorner(5)
         passwordTextField.titleFont = UIFont.systemFont(ofSize: 10)
         passwordTextField.isSecureTextEntry = passwordEntry
         passwordTextField.delegate = self
         
         confirmPassBorderView.layer.borderWidth = 1
         confirmPassBorderView.layer.borderColor = UIColor(red: 31/255, green: 84/255, blue: 96/255, alpha: 0.4).cgColor
+        confirmPassBorderView.roundCorner(5)
         confirmPassTextField.titleFont = UIFont.systemFont(ofSize: 10)
         confirmPassTextField.isSecureTextEntry = confirmPasswordEntry
         confirmPassTextField.delegate = self
@@ -134,7 +138,7 @@ class SignUpView: UIView {
             return
         }
         
-        verifyCurrentUser(user: User(userID: "", username: usernameTextField.text.orEmpty, email: emailTextField.text.orEmpty, password: passwordTextField.text.orEmpty, loginType: 1))
+        verifyCurrentUser(user: User(userId: "", username: usernameTextField.text.orEmpty, email: emailTextField.text.orEmpty, password: passwordTextField.text.orEmpty, loginType: 1))
     }
     
     @IBAction func googleAction(_ sender: Any) {
@@ -158,7 +162,7 @@ class SignUpView: UIView {
                     return
                 }
                 
-                self.verifyCurrentUser(user: User(userID: idToken.tokenString, username: user.profile?.name ?? "", email: user.profile?.email ?? "", password: "", loginType: 2))
+                self.verifyCurrentUser(user: User(userId: idToken.tokenString, username: user.profile?.name ?? "", email: user.profile?.email ?? "", password: "", loginType: 2))
             }
         }
     }
@@ -231,7 +235,7 @@ extension SignUpView: ASAuthorizationControllerDelegate {
                     let fullName = appleIDCredential.fullName
                     let email = appleIDCredential.email
                     
-                    self.verifyCurrentUser(user: User(userID: userID, username: String(describing: fullName), email: String(describing: email), password: "", loginType: 3))
+                    self.verifyCurrentUser(user: User(userId: userID, username: fullName?.givenName.orEmpty ?? "", email: email ?? "", password: "", loginType: 3))
                     break
                 case .revoked:
                     DispatchQueue.main.async {

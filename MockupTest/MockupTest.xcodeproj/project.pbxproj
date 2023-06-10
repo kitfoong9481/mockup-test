@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4A28C31E2A30B7710065D596 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A28C31D2A30B7710065D596 /* DashboardViewController.swift */; };
+		4A8035322A3355170042A3E7 /* CHIOTPField in Frameworks */ = {isa = PBXBuildFile; productRef = 4A8035312A3355170042A3E7 /* CHIOTPField */; };
+		4A8035342A33775F0042A3E7 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A8035332A33775F0042A3E7 /* success.json */; };
+		4A8035362A3377890042A3E7 /* error.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A8035352A3377890042A3E7 /* error.json */; };
+		4A8AC6A12A330481008B78CB /* ChangePassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8AC6A02A330481008B78CB /* ChangePassView.swift */; };
+		4A8AC6A32A3304BF008B78CB /* ChangePassView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8AC6A22A3304BF008B78CB /* ChangePassView.xib */; };
 		4AA2AB502A3215FE001025FA /* DashboardSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AA2AB4F2A3215FE001025FA /* DashboardSelectionCell.xib */; };
 		4AA2AB522A32161D001025FA /* DashboardSelectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA2AB512A32161D001025FA /* DashboardSelectionCell.swift */; };
 		4AA2AB542A3218CB001025FA /* DashboardSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AA2AB532A3218CB001025FA /* DashboardSelection.swift */; };
@@ -24,6 +29,10 @@
 		4AAC376E2A2F228C001D12C3 /* MockupTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC376D2A2F228C001D12C3 /* MockupTestTests.swift */; };
 		4AAC37782A2F228C001D12C3 /* MockupTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC37772A2F228C001D12C3 /* MockupTestUITests.swift */; };
 		4AAC377A2A2F228C001D12C3 /* MockupTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AAC37792A2F228C001D12C3 /* MockupTestUITestsLaunchTests.swift */; };
+		4AC2D8B32A32A98F00646881 /* passwordUnlock.json in Resources */ = {isa = PBXBuildFile; fileRef = 4AC2D8B22A32A98F00646881 /* passwordUnlock.json */; };
+		4AC2D8B72A32AFFA00646881 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC2D8B62A32AFFA00646881 /* SettingsViewController.swift */; };
+		4AC2D8B92A32B2A500646881 /* DashboardTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AC2D8B82A32B2A500646881 /* DashboardTabController.swift */; };
+		4AE093C72A32D1BD006F297F /* ChangePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE093C62A32D1BD006F297F /* ChangePassViewController.swift */; };
 		4AE0A3222A300B6300B7AFBB /* SkyFloatingLabelTextField in Frameworks */ = {isa = PBXBuildFile; productRef = 4AE0A3212A300B6300B7AFBB /* SkyFloatingLabelTextField */; };
 		4AE0A3252A300C9F00B7AFBB /* SignUpView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AE0A3242A300C9F00B7AFBB /* SignUpView.xib */; };
 		4AE0A3272A300D9100B7AFBB /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AE0A3262A300D9100B7AFBB /* SignUpView.swift */; };
@@ -79,6 +88,10 @@
 		43B7E343E1D353DC5660222E /* Pods_MockupTest_MockupTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MockupTest_MockupTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0707B4756BE1D15A171202 /* Pods-MockupTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MockupTest.debug.xcconfig"; path = "Target Support Files/Pods-MockupTest/Pods-MockupTest.debug.xcconfig"; sourceTree = "<group>"; };
 		4A28C31D2A30B7710065D596 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		4A8035332A33775F0042A3E7 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
+		4A8035352A3377890042A3E7 /* error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error.json; sourceTree = "<group>"; };
+		4A8AC6A02A330481008B78CB /* ChangePassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassView.swift; sourceTree = "<group>"; };
+		4A8AC6A22A3304BF008B78CB /* ChangePassView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePassView.xib; sourceTree = "<group>"; };
 		4AA2AB4F2A3215FE001025FA /* DashboardSelectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardSelectionCell.xib; sourceTree = "<group>"; };
 		4AA2AB512A32161D001025FA /* DashboardSelectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSelectionCell.swift; sourceTree = "<group>"; };
 		4AA2AB532A3218CB001025FA /* DashboardSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardSelection.swift; sourceTree = "<group>"; };
@@ -99,6 +112,10 @@
 		4AAC37732A2F228C001D12C3 /* MockupTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MockupTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AAC37772A2F228C001D12C3 /* MockupTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockupTestUITests.swift; sourceTree = "<group>"; };
 		4AAC37792A2F228C001D12C3 /* MockupTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockupTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4AC2D8B22A32A98F00646881 /* passwordUnlock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = passwordUnlock.json; sourceTree = "<group>"; };
+		4AC2D8B62A32AFFA00646881 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4AC2D8B82A32B2A500646881 /* DashboardTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardTabController.swift; sourceTree = "<group>"; };
+		4AE093C62A32D1BD006F297F /* ChangePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassViewController.swift; sourceTree = "<group>"; };
 		4AE0A3242A300C9F00B7AFBB /* SignUpView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpView.xib; sourceTree = "<group>"; };
 		4AE0A3262A300D9100B7AFBB /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		4AE0A32E2A30578900B7AFBB /* NSAttributedStringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSAttributedStringExtension.swift; sourceTree = "<group>"; };
@@ -133,6 +150,7 @@
 				4AE0A32D2A301CA000B7AFBB /* FINNBottomSheet in Frameworks */,
 				4AE0A3402A307CEA00B7AFBB /* FirebaseAnalytics in Frameworks */,
 				4AE0A3442A307CEA00B7AFBB /* FirebaseAuth in Frameworks */,
+				4A8035322A3355170042A3E7 /* CHIOTPField in Frameworks */,
 				4AE11B6C2A2F2EAF00C931F0 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +279,8 @@
 				4AE0A3372A306CE500B7AFBB /* SignInView.xib */,
 				4AA2AB4F2A3215FE001025FA /* DashboardSelectionCell.xib */,
 				4AA2AB512A32161D001025FA /* DashboardSelectionCell.swift */,
+				4A8AC6A02A330481008B78CB /* ChangePassView.swift */,
+				4A8AC6A22A3304BF008B78CB /* ChangePassView.xib */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -274,6 +294,9 @@
 				4AE11B772A2F5E0F00C931F0 /* SignUpViewController.swift */,
 				4AE11B792A2F5E1E00C931F0 /* SignInViewController.swift */,
 				4A28C31D2A30B7710065D596 /* DashboardViewController.swift */,
+				4AC2D8B62A32AFFA00646881 /* SettingsViewController.swift */,
+				4AC2D8B82A32B2A500646881 /* DashboardTabController.swift */,
+				4AE093C62A32D1BD006F297F /* ChangePassViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -297,6 +320,9 @@
 		4AFBC8B42A2F2682005D0746 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4A8035352A3377890042A3E7 /* error.json */,
+				4A8035332A33775F0042A3E7 /* success.json */,
+				4AC2D8B22A32A98F00646881 /* passwordUnlock.json */,
 				4AE11B732A2F40A400C931F0 /* animationLock.json */,
 			);
 			path = Resources;
@@ -340,6 +366,7 @@
 				4AE0A33F2A307CEA00B7AFBB /* FirebaseAnalytics */,
 				4AE0A3412A307CEA00B7AFBB /* FirebaseAnalyticsWithoutAdIdSupport */,
 				4AE0A3432A307CEA00B7AFBB /* FirebaseAuth */,
+				4A8035312A3355170042A3E7 /* CHIOTPField */,
 			);
 			productName = MockupTest;
 			productReference = 4AAC37502A2F228A001D12C3 /* MockupTest.app */;
@@ -421,6 +448,7 @@
 				4AE0A3202A300B6300B7AFBB /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */,
 				4AE0A32B2A301CA000B7AFBB /* XCRemoteSwiftPackageReference "BottomSheet" */,
 				4AE0A33E2A307CEA00B7AFBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4A8035302A3355170042A3E7 /* XCRemoteSwiftPackageReference "CHIOTPField" */,
 			);
 			productRefGroup = 4AAC37512A2F228A001D12C3 /* Products */;
 			projectDirPath = "";
@@ -439,12 +467,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AE11B742A2F40A500C931F0 /* animationLock.json in Resources */,
+				4A8AC6A32A3304BF008B78CB /* ChangePassView.xib in Resources */,
 				4AA2AB502A3215FE001025FA /* DashboardSelectionCell.xib in Resources */,
+				4AC2D8B32A32A98F00646881 /* passwordUnlock.json in Resources */,
 				4AAC37632A2F228B001D12C3 /* LaunchScreen.storyboard in Resources */,
 				4AAC37602A2F228B001D12C3 /* Assets.xcassets in Resources */,
 				4AE0A3252A300C9F00B7AFBB /* SignUpView.xib in Resources */,
 				4AE0A3382A306CE500B7AFBB /* SignInView.xib in Resources */,
+				4A8035342A33775F0042A3E7 /* success.json in Resources */,
 				4AAC375B2A2F228A001D12C3 /* Main.storyboard in Resources */,
+				4A8035362A3377890042A3E7 /* error.json in Resources */,
 				4AE0A33D2A3077CF00B7AFBB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -583,7 +615,10 @@
 				4AE11B762A2F5B3300C931F0 /* UIView+Extension.swift in Sources */,
 				4AE0A3312A30596500B7AFBB /* UITapGestureRecognizer+Extension.swift in Sources */,
 				4AA2AB522A32161D001025FA /* DashboardSelectionCell.swift in Sources */,
+				4AC2D8B92A32B2A500646881 /* DashboardTabController.swift in Sources */,
+				4A8AC6A12A330481008B78CB /* ChangePassView.swift in Sources */,
 				4AE11B782A2F5E0F00C931F0 /* SignUpViewController.swift in Sources */,
+				4AE093C72A32D1BD006F297F /* ChangePassViewController.swift in Sources */,
 				4AE11B6F2A2F323B00C931F0 /* OnboardViewController.swift in Sources */,
 				4AAC37582A2F228A001D12C3 /* SplashViewController.swift in Sources */,
 				4AE11B802A2F638A00C931F0 /* UIButton+Extension.swift in Sources */,
@@ -595,6 +630,7 @@
 				4AE0A3272A300D9100B7AFBB /* SignUpView.swift in Sources */,
 				4AE11B7E2A2F634D00C931F0 /* UIBarButton+Extension.swift in Sources */,
 				4AA4D3142A31B12C00B76703 /* CurrentUserController.swift in Sources */,
+				4AC2D8B72A32AFFA00646881 /* SettingsViewController.swift in Sources */,
 				4AA4D3092A3169F100B76703 /* MockupTest.xcdatamodeld in Sources */,
 				4AAC37562A2F228A001D12C3 /* SceneDelegate.swift in Sources */,
 			);
@@ -954,6 +990,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4A8035302A3355170042A3E7 /* XCRemoteSwiftPackageReference "CHIOTPField" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ChiliLabs/CHIOTPField.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
 		4AE0A3202A300B6300B7AFBB /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Skyscanner/SkyFloatingLabelTextField";
@@ -989,6 +1033,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		4A8035312A3355170042A3E7 /* CHIOTPField */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A8035302A3355170042A3E7 /* XCRemoteSwiftPackageReference "CHIOTPField" */;
+			productName = CHIOTPField;
+		};
 		4AE0A3212A300B6300B7AFBB /* SkyFloatingLabelTextField */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4AE0A3202A300B6300B7AFBB /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */;

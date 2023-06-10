@@ -7,6 +7,8 @@
 
 import Foundation
 import CoreData
+import Firebase
+import GoogleSignIn
 
 public class CurrentUserController {
     public func registerUser(user: User, complete: @escaping((_ status: Bool, _ message: String?) -> Void)) {
@@ -30,14 +32,17 @@ public class CurrentUserController {
                 currentUser?.setValue(user.loginType, forKey: #keyPath(CurrentUser.loginType))
                 currentUser?.setValue(true, forKey: #keyPath(CurrentUser.isLogin))
                 currentUser?.setValue(Date(), forKey: #keyPath(CurrentUser.updateTime))
+                currentUser?.setValue(user.userId, forKey: #keyPath(CurrentUser.userId))
             } else {
                 // new user
                 let newUser = CurrentUser(context: managedContext)
+                newUser.setValue(user.username, forKey: #keyPath(CurrentUser.username))
                 newUser.setValue(user.email, forKey: #keyPath(CurrentUser.email))
                 newUser.setValue(user.loginType == 1 ? user.password : "", forKey: #keyPath(CurrentUser.password))
                 newUser.setValue(user.loginType, forKey: #keyPath(CurrentUser.loginType))
                 newUser.setValue(true, forKey: #keyPath(CurrentUser.isLogin))
                 newUser.setValue(Date(), forKey: #keyPath(CurrentUser.updateTime))
+                newUser.setValue(user.userId, forKey: #keyPath(CurrentUser.userId))
             }
             
             AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
@@ -80,6 +85,7 @@ public class CurrentUserController {
                 currentUser?.setValue(user.loginType, forKey: #keyPath(CurrentUser.loginType))
                 currentUser?.setValue(true, forKey: #keyPath(CurrentUser.isLogin))
                 currentUser?.setValue(Date(), forKey: #keyPath(CurrentUser.updateTime))
+                currentUser?.setValue(user.userId, forKey: #keyPath(CurrentUser.userId))
             } else {
                 if user.loginType == 1 {
                     complete(false, "User does not exist. Please sign up first")
@@ -93,10 +99,11 @@ public class CurrentUserController {
                 newUser.setValue(user.loginType, forKey: #keyPath(CurrentUser.loginType))
                 newUser.setValue(true, forKey: #keyPath(CurrentUser.isLogin))
                 newUser.setValue(Date(), forKey: #keyPath(CurrentUser.updateTime))
+                newUser.setValue(user.userId, forKey: #keyPath(CurrentUser.userId))
             }
             
             AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
-            complete(false, "Login Successful")
+            complete(true, "Login Successful")
         } catch let error as NSError {
             complete(false, "Fetch error: \(error) description: \(error.userInfo)")
         }
@@ -128,5 +135,28 @@ public class CurrentUserController {
             
             complete(isLogin)
         })
+    }
+    
+    public func changePassword(user: CurrentUser, password: String, complete: @escaping(( _ isLogin: Bool, _ message: String?) -> Void)) {
+        user.password = password
+        AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
+        complete(true, "Change Password Successful")
+    }
+    
+    public func logout(user: CurrentUser, complete: @escaping(( _ isLogin: Bool, _ message: String?) -> Void)) {
+        user.isLogin = false
+        AppDelegate.sharedAppDelegate.coreDataStack.saveContext()
+        
+        if user.loginType == 2 {
+            GIDSignIn.sharedInstance.signOut()
+        }
+        
+
+        do {
+            try Auth.auth().signOut()
+            complete(true, nil)
+        } catch  let error as NSError {
+            complete(false, "Fetch error: \(error) description: \(error.userInfo)")
+        }
     }
 }

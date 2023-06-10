@@ -35,7 +35,7 @@ class SignUpViewController: TSViewController {
         
         let bottomSheetView = BottomSheetView(
             contentView: signUpView,
-            contentHeights: [screenHeight * 0.7]
+            contentHeights: [screenHeight * 0.7, screenHeight * 0.8]
         )
         
         bottomSheetView.present(in: self.view, targetIndex: 0)
@@ -53,7 +53,7 @@ extension SignUpViewController: SignUpViewDelegate {
     }
     
     func successSignUp() {
-        let vc : DashboardViewController = self.storyboard?.instantiateViewController(withIdentifier: "dashboard") as! DashboardViewController
+        let vc : DashboardTabController = self.storyboard?.instantiateViewController(withIdentifier: "dashboardTab") as! DashboardTabController
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }

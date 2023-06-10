@@ -29,17 +29,30 @@ class SignInView: UIView {
     @IBOutlet weak var appleView: UIView!
     @IBOutlet weak var signUpLabel: UILabel!
     
+    var currentUser: CurrentUser!
     var signInDelegate: SignInViewDelegate?
     var passwordEntry = true
     
     init() {
         super.init(frame: .zero)
+        getCurrentUser()
         setupUI()
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+        getCurrentUser()
         setupUI()
+    }
+    
+    func getCurrentUser() {
+        CurrentUserController().fetchUser(complete: { (user, status, message) in
+            if status {
+                self.currentUser = user!
+            } else {
+                self.makeToast(message, duration: 2, position: CSToastPositionCenter)
+            }
+        })
     }
     
     private func setupUI() {
@@ -52,12 +65,14 @@ class SignInView: UIView {
         
         emailBorderView.layer.borderWidth = 1
         emailBorderView.layer.borderColor = UIColor(red: 31/255, green: 84/255, blue: 96/255, alpha: 0.4).cgColor
+        emailBorderView.roundCorner(5)
         emailTextField.titleFont = UIFont.systemFont(ofSize: 10)
         emailTextField.keyboardType = .emailAddress
         emailTextField.delegate = self
         
         passwordBorderView.layer.borderWidth = 1
         passwordBorderView.layer.borderColor = UIColor(red: 31/255, green: 84/255, blue: 96/255, alpha: 0.4).cgColor
+        passwordBorderView.roundCorner(5)
         passwordTextField.titleFont = UIFont.systemFont(ofSize: 10)
         passwordTextField.isSecureTextEntry = passwordEntry
         passwordTextField.delegate = self
@@ -106,7 +121,12 @@ class SignInView: UIView {
             return
         }
         
-        verifyCurrentUser(user: User(userID: "", username: "", email: emailTextField.text.orEmpty, password: passwordTextField.text.orEmpty, loginType: 1))
+        if emailTextField.text != currentUser.email || passwordTextField.text != currentUser.password {
+            makeToast("Invalid Credential", duration: 2, position: CSToastPositionCenter)
+            return
+        }
+        
+        verifyCurrentUser(user: User(userId: "", username: "", email: emailTextField.text.orEmpty, password: passwordTextField.text.orEmpty, loginType: 1))
     }
     
     @IBAction func googleAction(_ sender: Any) {
@@ -135,7 +155,7 @@ class SignInView: UIView {
                     return
                 }
                 
-                self.verifyCurrentUser(user: User(userID: idToken.tokenString, username: user.profile?.name ?? "", email: user.profile?.email ?? "", password: "", loginType: 2))
+                self.verifyCurrentUser(user: User(userId: idToken.tokenString, username: user.profile?.name ?? "", email: user.profile?.email ?? "", password: "", loginType: 2))
             }
         }
     }
@@ -155,7 +175,7 @@ class SignInView: UIView {
     }
     
     func verifyCurrentUser(user: User) {
-        CurrentUserController().registerUser(user: user, complete: { (status, message) in
+        CurrentUserController().signInUser(user: user, complete: { (status, message) in
             self.makeToast(message, duration: 2, position: CSToastPositionCenter)
             
             if status {
@@ -185,8 +205,8 @@ extension SignInView: ASAuthorizationControllerDelegate {
             let userID = appleIDCredential.user
             let fullName = appleIDCredential.fullName
             let email = appleIDCredential.email
-            
-            verifyCurrentUser(user: User(userID: userID, username: String(describing: fullName), email: String(describing: email), password: "", loginType: 3))
+              
+            verifyCurrentUser(user: User(userId: userID, username: fullName?.givenName.orEmpty ?? "", email: email ?? "", password: "", loginType: 3))
         }
     }
     

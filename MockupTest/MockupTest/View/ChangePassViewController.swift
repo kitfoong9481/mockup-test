@@ -15,10 +15,13 @@ class ChangePassViewController: TSViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var currentPassView: UIView!
     @IBOutlet weak var currentPassTextField: SkyFloatingLabelTextField!
+    @IBOutlet weak var currentPassButton: UIButton!
     @IBOutlet weak var newPassView: UIView!
     @IBOutlet weak var newPassTextField: SkyFloatingLabelTextField!
+    @IBOutlet weak var newPassButton: UIButton!
     @IBOutlet weak var confirmPassView: UIView!
     @IBOutlet weak var confirmPassTextField: SkyFloatingLabelTextField!
+    @IBOutlet weak var confirmPassButton: UIButton!
     @IBOutlet weak var changePassButton: UIButton!
     
     var currentUser: CurrentUser!
@@ -123,16 +126,19 @@ class ChangePassViewController: TSViewController {
     
     @IBAction func currentPassAction(_ sender: Any) {
         currentPassEntry = !currentPassEntry
+        currentPassButton.setImage(UIImage(named: currentPassEntry ? "hidePassword" : "showPassword"), for: .normal)
         currentPassTextField.isSecureTextEntry = currentPassEntry
     }
     
     @IBAction func newPassAction(_ sender: Any) {
         passwordEntry = !passwordEntry
+        newPassButton.setImage(UIImage(named: passwordEntry ? "hidePassword" : "showPassword"), for: .normal)
         newPassTextField.isSecureTextEntry = passwordEntry
     }
     
     @IBAction func confirmPassAction(_ sender: Any) {
         confirmPasswordEntry = !confirmPasswordEntry
+        confirmPassButton.setImage(UIImage(named: confirmPasswordEntry ? "hidePassword" : "showPassword"), for: .normal)
         confirmPassTextField.isSecureTextEntry = confirmPasswordEntry
     }
     

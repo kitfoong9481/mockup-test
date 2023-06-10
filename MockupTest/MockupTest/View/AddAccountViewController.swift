@@ -23,6 +23,7 @@ class AddAccountViewController: TSViewController {
     @IBOutlet weak var emailTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var passwordView: UIView!
     @IBOutlet weak var passwordTextField: SkyFloatingLabelTextField!
+    @IBOutlet weak var passwordButton: UIButton!
     @IBOutlet weak var saveButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
     
@@ -138,6 +139,7 @@ class AddAccountViewController: TSViewController {
     
     @IBAction func showPassAction(_ sender: Any) {
         passwordEntry = !passwordEntry
+        passwordButton.setImage(UIImage(named: passwordEntry ? "hidePassword" : "showPassword"), for: .normal)
         passwordTextField.isSecureTextEntry = passwordEntry
     }
     

@@ -26,10 +26,11 @@ class SignUpView: UIView {
     @IBOutlet weak var emailTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var passwordBorderView: UIView!
     @IBOutlet weak var passwordTextField: SkyFloatingLabelTextField!
+    @IBOutlet weak var passwordButton: UIButton!
     @IBOutlet weak var confirmPassBorderView: UIView!
     @IBOutlet weak var confirmPassTextField: SkyFloatingLabelTextField!
+    @IBOutlet weak var confirmPassButton: UIButton!
     @IBOutlet weak var signUpButton: UIButton!
-    
     @IBOutlet weak var googleView: UIView!
     @IBOutlet weak var appleView: UIView!
     @IBOutlet weak var loginLabel: UILabel!
@@ -178,11 +179,13 @@ class SignUpView: UIView {
     
     @IBAction func showPasswordAction(_ sender: Any) {
         passwordEntry = !passwordEntry
+        passwordButton.setImage(UIImage(named: passwordEntry ? "showPassword" : "hidePassword"), for: .normal)
         passwordTextField.isSecureTextEntry = passwordEntry
     }
     
     @IBAction func showConfirmPassAction(_ sender: Any) {
         confirmPasswordEntry = !confirmPasswordEntry
+        confirmPassButton.setImage(UIImage(named: confirmPasswordEntry ? "hidePassword" : "showPassword"), for: .normal)
         confirmPassTextField.isSecureTextEntry = confirmPasswordEntry
     }
     

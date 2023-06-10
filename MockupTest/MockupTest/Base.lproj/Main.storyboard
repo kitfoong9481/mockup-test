@@ -708,12 +708,12 @@ Only you can see your personal data.</string>
                                                                 <rect key="frame" x="268" y="5" width="30" height="40"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i18-ku-KZt">
-                                                                        <rect key="frame" x="-10" y="10" width="50" height="20"/>
+                                                                        <rect key="frame" x="-9.3333333333333144" y="10" width="49" height="20"/>
                                                                         <constraints>
                                                                             <constraint firstAttribute="height" constant="20" id="hO8-PU-fsx"/>
                                                                         </constraints>
                                                                         <state key="normal" title="Button"/>
-                                                                        <buttonConfiguration key="configuration" style="plain" image="showPassword"/>
+                                                                        <buttonConfiguration key="configuration" style="plain" image="hidePassword"/>
                                                                         <connections>
                                                                             <action selector="showPassAction:" destination="HEj-5s-oNl" eventType="touchUpInside" id="zJf-jG-WBn"/>
                                                                         </connections>
@@ -871,6 +871,7 @@ Only you can see your personal data.</string>
                         <outlet property="emailView" destination="mgu-wY-i6c" id="W4E-Kr-GsU"/>
                         <outlet property="loginBorderView" destination="O51-bP-0Ik" id="mC9-Vm-h57"/>
                         <outlet property="loginTypeTextField" destination="rv3-3l-do4" id="WrC-B6-eQ5"/>
+                        <outlet property="passwordButton" destination="i18-ku-KZt" id="1eZ-z5-FI2"/>
                         <outlet property="passwordTextField" destination="iUs-eP-crs" id="gEu-Cd-UIC"/>
                         <outlet property="passwordView" destination="u1C-gk-vMP" id="h9V-fp-KDB"/>
                         <outlet property="saveButton" destination="1IG-Mx-1LT" id="c24-5s-Aai"/>
@@ -1200,12 +1201,12 @@ Only you can see your personal data.</string>
                                         <rect key="frame" x="318" y="5" width="30" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gLa-Bv-Oc4">
-                                                <rect key="frame" x="-10" y="10" width="50" height="20"/>
+                                                <rect key="frame" x="-9.3333333333333144" y="10" width="49" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="NV0-H4-JO6"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="showPassword"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="hidePassword"/>
                                                 <connections>
                                                     <action selector="currentPassAction:" destination="Frp-E8-B5v" eventType="touchUpInside" id="AvM-Bi-2z1"/>
                                                 </connections>
@@ -1273,12 +1274,12 @@ Only you can see your personal data.</string>
                                         <rect key="frame" x="318" y="5" width="30" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ioH-hp-W73">
-                                                <rect key="frame" x="-10" y="10" width="50" height="20"/>
+                                                <rect key="frame" x="-9.3333333333333144" y="10" width="49" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="aNM-Dl-bYU"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="showPassword"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="hidePassword"/>
                                                 <connections>
                                                     <action selector="newPassAction:" destination="Frp-E8-B5v" eventType="touchUpInside" id="XLm-I0-OI8"/>
                                                 </connections>
@@ -1346,12 +1347,12 @@ Only you can see your personal data.</string>
                                         <rect key="frame" x="318" y="5" width="30" height="40"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rP7-rA-Pq3">
-                                                <rect key="frame" x="-10" y="10" width="50" height="20"/>
+                                                <rect key="frame" x="-9.3333333333333144" y="10" width="49" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="0rM-N6-va3"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" image="showPassword"/>
+                                                <buttonConfiguration key="configuration" style="plain" image="hidePassword"/>
                                                 <connections>
                                                     <action selector="confirmPassAction:" destination="Frp-E8-B5v" eventType="touchUpInside" id="foA-Qd-TWm"/>
                                                 </connections>
@@ -1415,10 +1416,13 @@ Only you can see your personal data.</string>
                     <navigationItem key="navigationItem" id="fhE-mK-jel"/>
                     <connections>
                         <outlet property="changePassButton" destination="WBV-0Z-0QR" id="To6-mL-F3a"/>
+                        <outlet property="confirmPassButton" destination="rP7-rA-Pq3" id="oi1-ud-zhk"/>
                         <outlet property="confirmPassTextField" destination="fXa-jT-41M" id="vxY-va-PDL"/>
                         <outlet property="confirmPassView" destination="kvq-xi-mPo" id="UQ2-UB-Maa"/>
+                        <outlet property="currentPassButton" destination="gLa-Bv-Oc4" id="e0S-7y-ryg"/>
                         <outlet property="currentPassTextField" destination="yxj-fH-4Wl" id="xnr-S3-WVF"/>
                         <outlet property="currentPassView" destination="PxM-Hx-yUc" id="xz3-hf-jsb"/>
+                        <outlet property="newPassButton" destination="ioH-hp-W73" id="n6k-6s-3gg"/>
                         <outlet property="newPassTextField" destination="gl7-fN-DdW" id="w0Z-z4-dtr"/>
                         <outlet property="newPassView" destination="G4c-vz-v0h" id="SsP-uT-Qgn"/>
                         <outlet property="titleLabel" destination="gBe-JO-2l1" id="MHQ-VB-ML4"/>
@@ -1438,6 +1442,7 @@ Only you can see your personal data.</string>
         <image name="copy" width="18" height="21"/>
         <image name="dropdown" width="8" height="5"/>
         <image name="email" width="18" height="18"/>
+        <image name="hidePassword" width="25" height="21"/>
         <image name="home" width="25" height="25"/>
         <image name="logo 1" width="162" height="156"/>
         <image name="logout" width="23" height="21"/>
@@ -1448,7 +1453,6 @@ Only you can see your personal data.</string>
         <image name="selectedHome" width="25" height="25"/>
         <image name="selectedSettings" width="25" height="25"/>
         <image name="settings" width="25" height="25"/>
-        <image name="showPassword" width="26" height="26"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

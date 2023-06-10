@@ -12,6 +12,7 @@
             <connections>
                 <outlet property="appleView" destination="LNb-1h-BEd" id="tK8-yK-gn4"/>
                 <outlet property="confirmPassBorderView" destination="vdj-aT-HGN" id="wGT-rN-a5K"/>
+                <outlet property="confirmPassButton" destination="rb5-A4-wlj" id="epT-KT-kFB"/>
                 <outlet property="confirmPassTextField" destination="aCP-Lc-xfr" id="cpl-ym-xtE"/>
                 <outlet property="contentView" destination="kFW-Bh-Ldw" id="m3a-V1-Qql"/>
                 <outlet property="emailBorderView" destination="7Lg-40-mBH" id="mJa-HR-AXZ"/>
@@ -19,6 +20,7 @@
                 <outlet property="googleView" destination="Cq6-s3-PXF" id="eQi-M0-qfY"/>
                 <outlet property="loginLabel" destination="LhO-QZ-YGE" id="Uuf-MB-ryD"/>
                 <outlet property="passwordBorderView" destination="pOF-sv-STD" id="0zW-DR-LDf"/>
+                <outlet property="passwordButton" destination="wtT-Rc-M6N" id="6tW-Tr-Ze8"/>
                 <outlet property="passwordTextField" destination="egN-gS-ajs" id="9sQ-Hx-Go7"/>
                 <outlet property="signUpButton" destination="ImZ-ZI-s7c" id="dJa-WD-K1s"/>
                 <outlet property="usernameBorderView" destination="geP-AD-ap5" id="Ka7-Qw-jqI"/>
@@ -174,7 +176,7 @@
                                                 <constraint firstAttribute="width" constant="20" id="93Y-Ou-Sy5"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="showPassword"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="hidePassword"/>
                                             <connections>
                                                 <action selector="showPasswordAction:" destination="-1" eventType="touchUpInside" id="fQz-rZ-9Uj"/>
                                             </connections>
@@ -248,7 +250,7 @@
                                                 <constraint firstAttribute="height" constant="20" id="vps-O8-1Xj"/>
                                             </constraints>
                                             <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="plain" image="showPassword"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="hidePassword"/>
                                             <connections>
                                                 <action selector="showConfirmPassAction:" destination="-1" eventType="touchUpInside" id="jYy-01-LSl"/>
                                             </connections>
@@ -465,9 +467,9 @@
         <image name="apple" width="20" height="23"/>
         <image name="email" width="18" height="18"/>
         <image name="google" width="23" height="24"/>
+        <image name="hidePassword" width="25" height="21"/>
         <image name="password" width="16" height="18"/>
         <image name="profile" width="15" height="18"/>
-        <image name="showPassword" width="26" height="26"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

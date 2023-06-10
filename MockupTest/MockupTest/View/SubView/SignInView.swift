@@ -24,6 +24,7 @@ class SignInView: UIView {
     @IBOutlet weak var emailTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var passwordBorderView: UIView!
     @IBOutlet weak var passwordTextField: SkyFloatingLabelTextField!
+    @IBOutlet weak var passwordButton: UIButton!
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var googleView: UIView!
     @IBOutlet weak var appleView: UIView!
@@ -171,6 +172,7 @@ class SignInView: UIView {
     
     @IBAction func showPassAction(_ sender: Any) {
         passwordEntry = !passwordEntry
+        passwordButton.setImage(UIImage(named: passwordEntry ? "hidePassword" : "showPassword"), for: .normal)
         passwordTextField.isSecureTextEntry = passwordEntry
     }
     

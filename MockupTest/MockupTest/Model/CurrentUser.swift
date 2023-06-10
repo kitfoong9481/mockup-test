@@ -5,6 +5,11 @@
 //  Created by Kit Foong on 08/06/2023.
 //
 
+// Login Type
+// 1 - Mobile
+// 2 - Google
+// 3 - Apple
+
 import Foundation
 
 public class User {

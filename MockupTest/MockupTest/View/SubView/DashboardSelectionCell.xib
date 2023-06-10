@@ -19,7 +19,7 @@
                     <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DIr-13-SgT">
                         <rect key="frame" x="0.0" y="0.0" width="112" height="87"/>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" title="All Accounts">
+                        <buttonConfiguration key="configuration" style="plain" title="Login">
                             <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                         </buttonConfiguration>
                     </button>

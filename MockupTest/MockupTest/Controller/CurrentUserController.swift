@@ -21,6 +21,11 @@ public class CurrentUserController {
                 // user registered
                 let currentUser = results.first
                 
+                print(currentUser?.email)
+                print(user.email)
+                print(currentUser?.loginType)
+                print(user.loginType)
+                
                 if currentUser?.email == user.email && currentUser?.loginType == user.loginType {
                     complete(false, "User already registered. Please proceed to Sign In")
                     return

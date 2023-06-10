@@ -11,6 +11,14 @@
 		4A8035322A3355170042A3E7 /* CHIOTPField in Frameworks */ = {isa = PBXBuildFile; productRef = 4A8035312A3355170042A3E7 /* CHIOTPField */; };
 		4A8035342A33775F0042A3E7 /* success.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A8035332A33775F0042A3E7 /* success.json */; };
 		4A8035362A3377890042A3E7 /* error.json in Resources */ = {isa = PBXBuildFile; fileRef = 4A8035352A3377890042A3E7 /* error.json */; };
+		4A8035382A3413590042A3E7 /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8035372A3413590042A3E7 /* AddAccountViewController.swift */; };
+		4A80353A2A342CA70042A3E7 /* AccountController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8035392A342CA70042A3E7 /* AccountController.swift */; };
+		4A80353C2A34371C0042A3E7 /* NewAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A80353B2A34371C0042A3E7 /* NewAccount.swift */; };
+		4A80353E2A343E2F0042A3E7 /* AccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A80353D2A343E2F0042A3E7 /* AccountTableViewCell.xib */; };
+		4A8035402A343E3A0042A3E7 /* AccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A80353F2A343E3A0042A3E7 /* AccountTableViewCell.swift */; };
+		4A8035422A3454DD0042A3E7 /* AccountSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8035412A3454DD0042A3E7 /* AccountSelectionView.xib */; };
+		4A8035442A3454F00042A3E7 /* AccountSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8035432A3454F00042A3E7 /* AccountSelectionView.swift */; };
+		4A8035472A3458AA0042A3E7 /* EzPopup in Frameworks */ = {isa = PBXBuildFile; productRef = 4A8035462A3458AA0042A3E7 /* EzPopup */; };
 		4A8AC6A12A330481008B78CB /* ChangePassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A8AC6A02A330481008B78CB /* ChangePassView.swift */; };
 		4A8AC6A32A3304BF008B78CB /* ChangePassView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A8AC6A22A3304BF008B78CB /* ChangePassView.xib */; };
 		4AA2AB502A3215FE001025FA /* DashboardSelectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AA2AB4F2A3215FE001025FA /* DashboardSelectionCell.xib */; };
@@ -90,6 +98,13 @@
 		4A28C31D2A30B7710065D596 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		4A8035332A33775F0042A3E7 /* success.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = success.json; sourceTree = "<group>"; };
 		4A8035352A3377890042A3E7 /* error.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = error.json; sourceTree = "<group>"; };
+		4A8035372A3413590042A3E7 /* AddAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
+		4A8035392A342CA70042A3E7 /* AccountController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountController.swift; sourceTree = "<group>"; };
+		4A80353B2A34371C0042A3E7 /* NewAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewAccount.swift; sourceTree = "<group>"; };
+		4A80353D2A343E2F0042A3E7 /* AccountTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountTableViewCell.xib; sourceTree = "<group>"; };
+		4A80353F2A343E3A0042A3E7 /* AccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewCell.swift; sourceTree = "<group>"; };
+		4A8035412A3454DD0042A3E7 /* AccountSelectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSelectionView.xib; sourceTree = "<group>"; };
+		4A8035432A3454F00042A3E7 /* AccountSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSelectionView.swift; sourceTree = "<group>"; };
 		4A8AC6A02A330481008B78CB /* ChangePassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassView.swift; sourceTree = "<group>"; };
 		4A8AC6A22A3304BF008B78CB /* ChangePassView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePassView.xib; sourceTree = "<group>"; };
 		4AA2AB4F2A3215FE001025FA /* DashboardSelectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardSelectionCell.xib; sourceTree = "<group>"; };
@@ -150,6 +165,7 @@
 				4AE0A32D2A301CA000B7AFBB /* FINNBottomSheet in Frameworks */,
 				4AE0A3402A307CEA00B7AFBB /* FirebaseAnalytics in Frameworks */,
 				4AE0A3442A307CEA00B7AFBB /* FirebaseAuth in Frameworks */,
+				4A8035472A3458AA0042A3E7 /* EzPopup in Frameworks */,
 				4A8035322A3355170042A3E7 /* CHIOTPField in Frameworks */,
 				4AE11B6C2A2F2EAF00C931F0 /* Lottie in Frameworks */,
 			);
@@ -196,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				4AA4D3132A31B12C00B76703 /* CurrentUserController.swift */,
+				4A8035392A342CA70042A3E7 /* AccountController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -205,6 +222,7 @@
 			children = (
 				4AA4D3162A31B1F100B76703 /* CurrentUser.swift */,
 				4AA2AB532A3218CB001025FA /* DashboardSelection.swift */,
+				4A80353B2A34371C0042A3E7 /* NewAccount.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,6 +299,10 @@
 				4AA2AB512A32161D001025FA /* DashboardSelectionCell.swift */,
 				4A8AC6A02A330481008B78CB /* ChangePassView.swift */,
 				4A8AC6A22A3304BF008B78CB /* ChangePassView.xib */,
+				4A80353D2A343E2F0042A3E7 /* AccountTableViewCell.xib */,
+				4A80353F2A343E3A0042A3E7 /* AccountTableViewCell.swift */,
+				4A8035412A3454DD0042A3E7 /* AccountSelectionView.xib */,
+				4A8035432A3454F00042A3E7 /* AccountSelectionView.swift */,
 			);
 			path = SubView;
 			sourceTree = "<group>";
@@ -297,6 +319,7 @@
 				4AC2D8B62A32AFFA00646881 /* SettingsViewController.swift */,
 				4AC2D8B82A32B2A500646881 /* DashboardTabController.swift */,
 				4AE093C62A32D1BD006F297F /* ChangePassViewController.swift */,
+				4A8035372A3413590042A3E7 /* AddAccountViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -367,6 +390,7 @@
 				4AE0A3412A307CEA00B7AFBB /* FirebaseAnalyticsWithoutAdIdSupport */,
 				4AE0A3432A307CEA00B7AFBB /* FirebaseAuth */,
 				4A8035312A3355170042A3E7 /* CHIOTPField */,
+				4A8035462A3458AA0042A3E7 /* EzPopup */,
 			);
 			productName = MockupTest;
 			productReference = 4AAC37502A2F228A001D12C3 /* MockupTest.app */;
@@ -449,6 +473,7 @@
 				4AE0A32B2A301CA000B7AFBB /* XCRemoteSwiftPackageReference "BottomSheet" */,
 				4AE0A33E2A307CEA00B7AFBB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				4A8035302A3355170042A3E7 /* XCRemoteSwiftPackageReference "CHIOTPField" */,
+				4A8035452A3458AA0042A3E7 /* XCRemoteSwiftPackageReference "EzPopup" */,
 			);
 			productRefGroup = 4AAC37512A2F228A001D12C3 /* Products */;
 			projectDirPath = "";
@@ -471,9 +496,11 @@
 				4AA2AB502A3215FE001025FA /* DashboardSelectionCell.xib in Resources */,
 				4AC2D8B32A32A98F00646881 /* passwordUnlock.json in Resources */,
 				4AAC37632A2F228B001D12C3 /* LaunchScreen.storyboard in Resources */,
+				4A80353E2A343E2F0042A3E7 /* AccountTableViewCell.xib in Resources */,
 				4AAC37602A2F228B001D12C3 /* Assets.xcassets in Resources */,
 				4AE0A3252A300C9F00B7AFBB /* SignUpView.xib in Resources */,
 				4AE0A3382A306CE500B7AFBB /* SignInView.xib in Resources */,
+				4A8035422A3454DD0042A3E7 /* AccountSelectionView.xib in Resources */,
 				4A8035342A33775F0042A3E7 /* success.json in Resources */,
 				4AAC375B2A2F228A001D12C3 /* Main.storyboard in Resources */,
 				4A8035362A3377890042A3E7 /* error.json in Resources */,
@@ -610,6 +637,7 @@
 				4AA4D3172A31B1F100B76703 /* CurrentUser.swift in Sources */,
 				4AE0A3362A306CDA00B7AFBB /* SignInView.swift in Sources */,
 				4AE11B722A2F3FF000C931F0 /* UIViewController+Extension.swift in Sources */,
+				4A8035402A343E3A0042A3E7 /* AccountTableViewCell.swift in Sources */,
 				4AE11B822A2F646B00C931F0 /* Action.swift in Sources */,
 				4AE0A3332A3063FC00B7AFBB /* Optional+Extension.swift in Sources */,
 				4AE11B762A2F5B3300C931F0 /* UIView+Extension.swift in Sources */,
@@ -622,17 +650,21 @@
 				4AE11B6F2A2F323B00C931F0 /* OnboardViewController.swift in Sources */,
 				4AAC37582A2F228A001D12C3 /* SplashViewController.swift in Sources */,
 				4AE11B802A2F638A00C931F0 /* UIButton+Extension.swift in Sources */,
+				4A8035382A3413590042A3E7 /* AddAccountViewController.swift in Sources */,
 				4AE11B7C2A2F61A500C931F0 /* TSViewController.swift in Sources */,
 				4AE11B7A2A2F5E1E00C931F0 /* SignInViewController.swift in Sources */,
 				4AAC37542A2F228A001D12C3 /* AppDelegate.swift in Sources */,
+				4A80353A2A342CA70042A3E7 /* AccountController.swift in Sources */,
 				4AA2AB542A3218CB001025FA /* DashboardSelection.swift in Sources */,
 				4AE0A32F2A30578900B7AFBB /* NSAttributedStringExtension.swift in Sources */,
 				4AE0A3272A300D9100B7AFBB /* SignUpView.swift in Sources */,
 				4AE11B7E2A2F634D00C931F0 /* UIBarButton+Extension.swift in Sources */,
+				4A80353C2A34371C0042A3E7 /* NewAccount.swift in Sources */,
 				4AA4D3142A31B12C00B76703 /* CurrentUserController.swift in Sources */,
 				4AC2D8B72A32AFFA00646881 /* SettingsViewController.swift in Sources */,
 				4AA4D3092A3169F100B76703 /* MockupTest.xcdatamodeld in Sources */,
 				4AAC37562A2F228A001D12C3 /* SceneDelegate.swift in Sources */,
+				4A8035442A3454F00042A3E7 /* AccountSelectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -998,6 +1030,14 @@
 				minimumVersion = 0.1.0;
 			};
 		};
+		4A8035452A3458AA0042A3E7 /* XCRemoteSwiftPackageReference "EzPopup" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huynguyencong/EzPopup";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		4AE0A3202A300B6300B7AFBB /* XCRemoteSwiftPackageReference "SkyFloatingLabelTextField" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Skyscanner/SkyFloatingLabelTextField";
@@ -1037,6 +1077,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4A8035302A3355170042A3E7 /* XCRemoteSwiftPackageReference "CHIOTPField" */;
 			productName = CHIOTPField;
+		};
+		4A8035462A3458AA0042A3E7 /* EzPopup */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A8035452A3458AA0042A3E7 /* XCRemoteSwiftPackageReference "EzPopup" */;
+			productName = EzPopup;
 		};
 		4AE0A3212A300B6300B7AFBB /* SkyFloatingLabelTextField */ = {
 			isa = XCSwiftPackageProductDependency;

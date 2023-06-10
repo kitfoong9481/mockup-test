@@ -11,6 +11,7 @@ class DashboardSelectionCell: UICollectionViewCell {
     @IBOutlet weak var selectionButton: UIButton!
     
     static let cellIdentifier = "DashboardSelectionCell"
+    var selection: DashboardSelection!
     
     class func nib() -> UINib {
         return UINib(nibName: cellIdentifier, bundle: nil)
@@ -29,7 +30,10 @@ class DashboardSelectionCell: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        self.layoutIfNeeded()
+
+        if selection != nil {
+            configure(selection: selection)
+        }
     }
     
     func configure(selection: DashboardSelection) {
@@ -40,7 +44,6 @@ class DashboardSelectionCell: UICollectionViewCell {
         } else {
             selectionButton.backgroundColor = UIColor(red: 0.837, green: 0.872, blue: 0.879, alpha: 1)
             selectionButton.titleLabel?.textColor = .black
-            
         }
         
         selectionButton.titleLabel?.sizeToFit()

@@ -23,7 +23,7 @@ extension UIButton {
         self.layer.masksToBounds = true
         self.layer.borderWidth = borderWidth
         self.layer.borderColor = borderColor.cgColor
-        // 图片拉伸样式设置
+
         self.contentMode = .scaleAspectFill
     }
 }

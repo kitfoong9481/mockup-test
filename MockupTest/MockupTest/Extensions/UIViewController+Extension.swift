@@ -8,7 +8,6 @@
 import UIKit
 
 extension UIViewController {
-    // shadowColor  - 设置导航栏分割线的颜色，默认为灰色
     func setClearNavBar(tint: UIColor = .black, shadowColor: UIColor = .clear) {
         navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController?.navigationBar.shadowImage = UIImage()

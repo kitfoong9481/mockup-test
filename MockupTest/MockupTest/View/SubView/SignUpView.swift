@@ -221,31 +221,10 @@ extension SignUpView: ASAuthorizationControllerDelegate {
     func authorizationController(controller: ASAuthorizationController, didCompleteWithAuthorization authorization: ASAuthorization) {
         if let appleIDCredential = authorization.credential as?  ASAuthorizationAppleIDCredential {
             let userID = appleIDCredential.user
-            
-            let appleIDProvider = ASAuthorizationAppleIDProvider()
-            appleIDProvider.getCredentialState(forUserID: userID) {  (credentialState, error) in
-                switch credentialState {
-                case .authorized:
-                    DispatchQueue.main.async {
-                        self.makeToast("User already registered. Please proceed to Sign In", duration: 2, position: CSToastPositionCenter)
-                    }
-                    break
-                case .notFound:
-                    let userID = appleIDCredential.user
-                    let fullName = appleIDCredential.fullName
-                    let email = appleIDCredential.email
-                    
-                    self.verifyCurrentUser(user: User(userId: userID, username: fullName?.givenName.orEmpty ?? "", email: email ?? "", password: "", loginType: 3))
-                    break
-                case .revoked:
-                    DispatchQueue.main.async {
-                        self.makeToast("The Apple ID credential is revoked", duration: 2, position: CSToastPositionCenter)
-                    }
-                    break
-                default:
-                    break
-                }
-            }
+            let fullName = appleIDCredential.fullName
+            let email = appleIDCredential.email
+              
+            verifyCurrentUser(user: User(userId: userID, username: fullName?.givenName.orEmpty ?? "", email: email ?? "", password: "", loginType: 3))
         }
     }
     
